@@ -5,6 +5,7 @@ import lombok.Data;
 
 @Data
 @Entity
+@Table(name = "WH-SUPPLIERS")
 public class Supplier {
 
     @Id

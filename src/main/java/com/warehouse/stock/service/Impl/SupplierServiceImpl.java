@@ -4,7 +4,6 @@ import com.warehouse.stock.config.SupplierSearchConfig;
 import com.warehouse.stock.model.Supplier;
 import com.warehouse.stock.repository.SupplierRepository;
 import com.warehouse.stock.service.SupplierService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -12,7 +11,6 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
 import java.util.Optional;
 
 @Service

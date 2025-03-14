@@ -3,7 +3,6 @@ package com.warehouse.stock.service;
 import com.warehouse.stock.model.Supplier;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 

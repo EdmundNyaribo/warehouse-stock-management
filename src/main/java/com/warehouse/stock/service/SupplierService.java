@@ -13,7 +13,7 @@ public interface SupplierService {
 
     Optional<Supplier> getSupplierById(Long id);
 
-    Page<Supplier> getAllSuppliers(Pageable pageable);
+    Page<Supplier> getAllSuppliers(Pageable pageable, String name, Long createdDate, Long endDate);
 
     Supplier updateSupplier(Long id, Supplier supplier);
 

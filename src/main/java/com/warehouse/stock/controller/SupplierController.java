@@ -24,8 +24,11 @@ public class SupplierController {
     }
 
     @GetMapping
-    public ResponseEntity<Page<Supplier>> getAllSuppliers(Pageable pageable) {
-        return ResponseEntity.ok(supplierService.getAllSuppliers(pageable));
+    public ResponseEntity<Page<Supplier>> getAllSuppliers(Pageable pageable,
+                                                          @RequestParam(required = false) String name,
+                                                          @RequestParam(required = false) Long createdDate,
+                                                          @RequestParam(required = false) Long endDate) {
+        return ResponseEntity.ok(supplierService.getAllSuppliers(pageable, name, createdDate, endDate));
     }
 
     @GetMapping("/{id}")
